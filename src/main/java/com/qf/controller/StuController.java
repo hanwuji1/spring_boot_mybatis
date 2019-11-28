@@ -16,9 +16,14 @@ public class StuController {
     @Autowired
     private StuMapper stuMapper;
 
+    /**
+     * 获取列表
+     * @return
+     */
     @RequestMapping("/list")
     public List<Student> stuList(){
         List<Student> students = stuMapper.stuList();
         return students;
     }
+    //新建了一个分支,这是mylove写的
 }
